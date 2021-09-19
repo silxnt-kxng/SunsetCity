@@ -5,4 +5,4 @@ Self botting: I'd appreciate if you didn't, but I can't really stop you, now can
 
 Join Sunset City here!
 
-discord.gg/7ZbytKATfm
+https://discord.gg/7ZbytKATfm
