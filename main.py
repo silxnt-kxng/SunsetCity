@@ -30,7 +30,7 @@ async def on_ready():
     print("Bot online!")
     print(f"Logged in as {bot.user} (ID: {bot.user.id})")
 
-extentions = ['cogs.fun']
+extentions = ['cogs.fun', 'cogs.help', 'cogs.info', 'cogs.mis', 'cogs.start', 'cogs.voice']
 
 if __name__ == '__main__':
     for x in extentions:
