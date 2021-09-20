@@ -5,7 +5,7 @@ from disnake import guild
 
 color = disnake.Colour.from_rgb(205, 148, 255)
 
-PREFIX = ['ss!', 'ss! ', 'sunset!', 'sunset! ']
+PREFIX = "ss!"
 
 intents = disnake.Intents.all()
 intents.members = True
@@ -25,9 +25,15 @@ async def on_ready():
     
     intmemall = len(membersall)
 	
-    await bot.change_presence(activity=disnake.Activity(type=disnake.ActivityType.watching, name=(f"{membersall} friends!")))
+    await bot.change_presence(activity=disnake.Activity(type=disnake.ActivityType.watching, name=(f"{intmemall} friends!")))
 
     print("Bot online!")
     print(f"Logged in as {bot.user} (ID: {bot.user.id})")
+
+extentions = ['cogs.fun']
+
+if __name__ == '__main__':
+    for x in extentions:
+        bot.load_extension(x)
 
 bot.run(TOKEN)
