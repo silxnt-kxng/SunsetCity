@@ -1,4 +1,5 @@
 from os import name
+import random
 from attr import validate
 import disnake
 from disnake import embeds
@@ -68,11 +69,13 @@ class HelpDialouge(commands.Cog):
       name='dadjoke',
       value='Sunset tells a dad joke'
     )
-
+    embedfun.add_field(
+    name="playlist",
+    value="Get the server Spotify playlist!"
+    )
     embedfun.set_thumbnail(
       url=url
       )
-    
     embedfun.set_image(
       url=image
     )
@@ -267,7 +270,7 @@ class HelpDialouge(commands.Cog):
       value="Unmutes a user that has been muted"
     )
     embedmod.add_field(
-      name="k.nick <@user/userid> <new nickname>",
+      name="nick <@user/userid> <new nickname>",
       value="Nicknames the user"
     )
     embedmod.add_field(
@@ -275,7 +278,7 @@ class HelpDialouge(commands.Cog):
       value="Deletes a given number of messages"
     )
     embedmod.add_field(
-      name="k.purge <number of messages> <@user/userid>",
+      name="purge <number of messages> <@user/userid>",
       value="Purges a given number of messages by a given user"
     )
     embedmod.set_thumbnail(
@@ -331,7 +334,7 @@ class HelpDialouge(commands.Cog):
       await ctx.send(embed=embed)
     
     elif ctx.author.id != 422835542653272066:
-      await ctx.send("And what do you thing *you're* doing?")
+      await ctx.send(random.choice("Nice try!", "Rip bozo", "You're not Kxng, silly!", "Better luck next time!"))
 
 def setup(bot):
   bot.add_cog(HelpDialouge(bot))
