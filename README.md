@@ -6,5 +6,3 @@ Self botting: I'd appreciate if you didn't, but I can't really stop you, now can
 Join Sunset City here!
 
 https://discord.gg/7ZbytKATfm
-
-<iframe src="https://discord.com/widget?id=859581824158138388&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
